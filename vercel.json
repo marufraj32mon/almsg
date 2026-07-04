@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "name": "alzeena-inbox",
+  "public": true,
+  "functions": {
+    "api/**/*.js": {
+      "memory": 128,
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    { "source": "/inbox", "destination": "/alzeena-inbox.html" },
+    { "source": "/", "destination": "/alzeena-inbox.html" }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store, no-cache, must-revalidate" }
+      ]
+    }
+  ]
+}

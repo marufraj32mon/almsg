@@ -1,0 +1,11 @@
+{
+  "name": "alzeena-inbox",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Alzeena Inbox — Unified Messenger for Meta Pages",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "dependencies": {}
+}
